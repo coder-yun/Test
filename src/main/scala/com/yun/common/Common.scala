@@ -5,7 +5,7 @@ package com.yun.common
   */
 object Common {
   def main(args: Array[String]): Unit = {
-//    testStream
+    testStream
   }
 
    def testStream = {
