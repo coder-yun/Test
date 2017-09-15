@@ -2,10 +2,10 @@ package com.yun.spark
 
 import org.apache.spark.{SparkConf, SparkContext}
 
-object SimpleApp  {
+object SimpleApp {
   def main(args: Array[String]) {
-//    val logFile = "file:///usr/lib/spark-2.0.0-bin-hadoop2.7/README.md" // Should be some file on your system
-    val projectHome=System.getProperty("user.dir")
+    //    val logFile = "file:///usr/lib/spark-2.0.0-bin-hadoop2.7/README.md" // Should be some file on your system
+    val projectHome = System.getProperty("user.dir")
     val logFile = s"file:///${projectHome}/pom.xml"
     val conf = new SparkConf().setAppName("Simple Application").setMaster("local[*]")
     val sc = new SparkContext(conf)
